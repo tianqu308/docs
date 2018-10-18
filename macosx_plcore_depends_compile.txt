@@ -1,0 +1,14 @@
+1. 删除 /Users/Shared 下的所有文件及目录
+2. git clone plcore 代码 （dev_win_ly_macos分支）
+# 目前在该分支编译plcore的依赖库
+
+3. 编译depends
+ $ cd $HOME/Kodi
+ $ cd tools/depends
+ $ ./bootstrap
+ $ ./configure --host=x86_64-apple-darwin --prefix=你选择你喜欢
+ $ make
+ 
+4. \\10.10.2.220\share\sp\ly\tarballs
+# 将该目录的所有文件 拷贝到 --prefix指定的目录/plcore-depends/tarballs 
+这些目录不需要手动创建，什么时候发现有了，再拷贝即可
